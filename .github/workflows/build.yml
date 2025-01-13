@@ -3,6 +3,10 @@ name: Build and push multi-arch
 on:
   workflow_dispatch:
 
+permissions:
+  packages: write
+  contents: read
+
 jobs:
   job1:
     runs-on: ubuntu-latest
